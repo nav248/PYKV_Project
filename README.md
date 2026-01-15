@@ -53,19 +53,22 @@ To build a scalable key-value store with LRU caching, disk persistence, recovery
 --> Project Structure
 
 server/        → Backend logic
+
 client.py     → API client
+
 benchmark.py  → Performance testing
+
 requirements.txt
 
 --> How to Run
 
-Install dependencies-pip install -r requirements.txt
+Install dependencies- pip install -r requirements.txt
 
-Start server-uvicorn server.main:app --reload
+Start server- uvicorn server.main:app --reload
 
-Run client-python client.py
+Run client- python client.py
 
-Run benchmark-python benchmark.py
+Run benchmark- python benchmark.py
 
 API Endpoints
 

@@ -1,4 +1,5 @@
 PyKV – In-Memory Key-Value Store with Persistence
+
 -->Overview:
 
 PyKV is a lightweight in-memory key-value store built using Python and FastAPI.
@@ -18,6 +19,7 @@ Python dictionaries are fast but lack:
 4.Crash recovery
 
 -->Goal:
+
 To build a scalable key-value store with LRU caching, disk persistence, recovery, and concurrency support.
 
 --> Features
@@ -49,23 +51,21 @@ To build a scalable key-value store with LRU caching, disk persistence, recovery
 5.Multithreading
 
 --> Project Structure
+
 server/        → Backend logic
 client.py     → API client
 benchmark.py  → Performance testing
 requirements.txt
 
 --> How to Run
-Install dependencies
-pip install -r requirements.txt
 
-Start server
-uvicorn server.main:app --reload
+Install dependencies-pip install -r requirements.txt
 
-Run client
-python client.py
+Start server-uvicorn server.main:app --reload
 
-Run benchmark
-python benchmark.py
+Run client-python client.py
+
+Run benchmark-python benchmark.py
 
 API Endpoints
 

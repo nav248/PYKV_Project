@@ -1,42 +1,42 @@
 PyKV – In-Memory Key-Value Store with Persistence
-Overview:
+-->Overview:
 
 PyKV is a lightweight in-memory key-value store built using Python and FastAPI.
 It improves upon a normal Python dictionary by adding LRU caching, disk persistence, crash recovery, and concurrent client handling.
 The project is inspired by real-world systems like Redis.
 
-Problem Statement
+-->Problem Statement
 
 Python dictionaries are fast but lack:
 
-Eviction policy
+1.Eviction policy
 
-Persistence
+2.Persistence
 
-Concurrency support
+3.Concurrency support
 
-Crash recovery
+4.Crash recovery
 
-Goal:
+-->Goal:
 To build a scalable key-value store with LRU caching, disk persistence, recovery, and concurrency support.
 
- Features
+--> Features
 
-Fast in-memory storage
+1.Fast in-memory storage
 
-LRU (Least Recently Used) cache eviction
+2.LRU (Least Recently Used) cache eviction
 
-Append-only disk persistence
+3.Append-only disk persistence
 
-Automatic crash recovery
+4.Automatic crash recovery
 
-REST APIs using FastAPI
+5.REST APIs using FastAPI
 
-Concurrent client handling
+6.Concurrent client handling
 
-Performance benchmarking
+7.Performance benchmarking
 
-Tech Stack
+-->Tech Stack
 
 1.Python
 
@@ -48,13 +48,13 @@ Tech Stack
 
 5.Multithreading
 
-📂 Project Structure
+--> Project Structure
 server/        → Backend logic
 client.py     → API client
 benchmark.py  → Performance testing
 requirements.txt
 
-⚙️ How to Run
+--> How to Run
 Install dependencies
 pip install -r requirements.txt
 
@@ -83,16 +83,16 @@ On restart, data is recovered by replaying the log
 
 Ensures no data loss after crash
 
-⚠️ Limitations
+-->Limitations
 
-Single-node system
+1.Single-node system
 
-No authentication
+2.No authentication
 
-No TTL support
+3.No TTL support
 
 
 
-Conclusion:
+-->Conclusion:
 
 PyKV demonstrates core backend concepts such as caching, persistence, recovery, and concurrency, making it a strong foundation for understanding real-world key-value storage systems.

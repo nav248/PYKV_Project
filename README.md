@@ -70,7 +70,7 @@ Run client- python client.py
 
 Run benchmark- python benchmark.py
 
-API Endpoints
+-->API Endpoints
 
 POST /set – Store key-value pair
 
@@ -78,7 +78,7 @@ GET /get/{key} – Retrieve value
 
 DELETE /delete/{key} – Delete key
 
-Persistence & Recovery
+-->Persistence & Recovery
 
 All operations are logged to a file
 
